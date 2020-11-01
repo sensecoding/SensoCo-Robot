@@ -1,8 +1,7 @@
 //COMMAND LINE :
 
 
-//g++-6 sc_ObjectTracking.cpp sc_Robot.cpp sc_usb_serial_comm.cpp -lopencv_core -lopencv_imgproc -lopencv_objdetect -lopencv_highgui -lopencv_imgcodecs -lopencv_videoio -std=c++17 -lpthread  -o a.out
-
+//g++ sc_Robot.cpp sc_ObjectTracking.cpp sc_usb_serial_comm.cpp -lopencv_core -lopencv_imgproc -lopencv_objdetect -lopencv_highgui -lopencv_imgcodecs -lopencv_videoio -std=c++17 -lpthread -I ../opencv/modules/highgui/include/ -I ../opencv/modules/videoio//include/ -I ../opencv/modules/core/include/ -I ../opencv/build/ -I ../opencv/modules/objdetect/include/ -I ../opencv/modules/imgcodecs/include/ -I ../opencv/modules/gapi/include -I ../opencv/modules/imgproc/include/ -o a.out 
 
 #define BOARD RASPBERRY_PI
 
